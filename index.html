@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HOME SCREEN -->
+  <section id="home-screen">
+    <h1>College Knowledge Quiz</h1>
+    <p>Test your knowledge about our college</p>
+    <button class="btn" id="startQuizBtn">Start Quiz</button>
+    <button class="btn" id="adminLoginBtn">Admin Login</button>
+  </section>
+
+  <!-- QUIZ SCREEN -->
+  <section id="quiz-screen" style="display:none;">
+    <h2 id="question"></h2>
+    <div id="options" class="options"></div>
+    <button class="btn" id="submitBtn">Submit</button>
+    <div id="feedback" class="feedback"></div>
+  </section>
+
+  <!-- RESULT SCREEN -->
+  <section id="result-screen" style="display:none;">
+    <h2 id="scoreText"></h2>
+    <button class="btn" id="restartBtn">Go Home</button>
+  </section>
+
+  <!-- ADMIN SCREEN -->
+  <section id="admin-screen" style="display:none;">
+    <h2>Admin Question Editor</h2>
+    <textarea id="questionEditor"></textarea>
+    <button class="btn" id="saveQuestionsBtn">Save Questions</button>
+    <button class="btn" id="adminBackBtn">Go Home</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
